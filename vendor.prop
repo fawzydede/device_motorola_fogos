@@ -21,3 +21,7 @@ vendor.false_touch_quality=38
 
 # Radio
 ro.vendor.radio.imei.sv=20
+
+# ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
