@@ -4,6 +4,7 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageApertureAppDevice",
-    vendor: true,
+    name: "FogosUpdater",
+    sdk_version: "current",
+    product_specific: true,
 }
