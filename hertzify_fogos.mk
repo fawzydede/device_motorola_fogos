@@ -21,6 +21,10 @@ HERTZIFY_MAINTAINER := Lightqueen|麥克寧
 # MotoCamera
 $(call inherit-product, vendor/motorola/motocamera/motocamera.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FogosUpdater
+
 PRODUCT_NAME := hertzify_fogos
 PRODUCT_DEVICE := fogos
 PRODUCT_MANUFACTURER := motorola
