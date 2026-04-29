@@ -11,10 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fogos device
 $(call inherit-product, device/motorola/fogos/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Afterlife stuff.
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_fogos
+# AfterLify
+AFTERLIFE_BUILD_TYPE := OFFICIAL
+AFTERLIFE_MAINTAINER := fawzydede
+AFTERLIFE_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-afterlife
+
+PRODUCT_NAME := afterlife_fogos
 PRODUCT_DEVICE := fogos
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
