@@ -11,10 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fogos device
 $(call inherit-product, device/motorola/fogos/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common HertzifyOS stuff.
+$(call inherit-product, vendor/hertzify/config/common_full_phone.mk)
+-include vendor/lineage-priv/keys/keys.mk
 
-PRODUCT_NAME := lineage_fogos
+# HertzifyOS
+HERTZIFY_MAINTAINER := Lightqueen|麥克寧
+
+# MotoCamera
+$(call inherit-product, vendor/motorola/motocamera/motocamera.mk)
+
+PRODUCT_NAME := hertzify_fogos
 PRODUCT_DEVICE := fogos
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
