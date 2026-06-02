@@ -231,6 +231,11 @@ vendor/etc/qdcm_calib_data_mipi_mot_vid_txd_ili9883c_hdp_652_120.xml
 # Display config
 vendor/etc/SVIConfig.xml
 
+# DRM
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libtrustedapploader.so
+vendor/lib64/libtzdrmgenprov.so
+
 # Euicc
 product/app/EuiccPartnerApp/EuiccPartnerApp.apk
 product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
@@ -273,6 +278,9 @@ vendor/firmware/sec_s3nrn4v_firmware.bin
 
 # OEM
 vendor/etc/vhw.xml
+
+# QMI
+vendor/lib64/libminkdescriptor.so
 
 # SAR firmware
 vendor/firmware/aw963xx_reg_0.bin
